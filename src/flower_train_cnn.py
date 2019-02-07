@@ -45,9 +45,9 @@ def read_and_decode(filename_queue):
 
 def flower_input(if_random = True, if_training = True):
     if(if_training):
-        filenames = [os.path.join(DATA_DIR, "flower-train-0000%d-of-00002" % i) for i in xrange(0, 1)]
+        filenames = [os.path.join(DATA_DIR, "flower-train-0000%d-of-00002" % i) for i in range(0, 1)]
     else:
-        filenames = [os.path.join(DATA_DIR, "flower-eval-0000%d-of-00002" % i) for i in xrange(0, 1)]
+        filenames = [os.path.join(DATA_DIR, "flower-eval-0000%d-of-00002" % i) for i in range(0, 1)]
 
     for f in filenames:
         if not tf.gfile.Exists(f):
